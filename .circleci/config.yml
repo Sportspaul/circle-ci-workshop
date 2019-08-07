@@ -3,8 +3,8 @@ jobs:
   build:
     docker:
       - image: circleci/openjdk:8-jdk
-    steps: -checkout
+    steps: 
+      -checkout
       - run:
-          name: The First Step
-          command: |
+          command:
             gradle test
